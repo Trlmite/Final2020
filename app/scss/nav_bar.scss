@@ -1,17 +1,17 @@
 nav {
     display: flex;
-    flex-grow: 1;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     position: fixed;
     width: 100%;
     background-color: #1C1C1C;
     margin: 0;
+    z-index: 10;
 
     .logo{
         position: relative;
-
-        margin: 15px 142px 0px  ;
+        flex-grow: 1;
+        margin: 15px 0px 0px  142px;
     }
 
     ul{
@@ -24,12 +24,13 @@ nav {
         padding-inline-start: 80px;
 
         li{
+            flex-grow: 1;
             color: #FFFFFF;
             font-family: $fontas;
             font-size: 14px;
             opacity: 0.69;
             text-transform:  capitalize;
-            margin: 25px 45px 25px 45px;
+            margin: 25px 22.5px 25px 22.5px;
         }
 
         li::after{

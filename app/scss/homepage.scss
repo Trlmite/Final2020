@@ -1,0 +1,67 @@
+.homepage {
+    display: flex;
+    position: relative;
+    top: 96px;
+    background-image: url(images/homepage.jpg);
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+
+    .opacityContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: #1C1C1C;
+        opacity:0.63 ;
+        z-index: 3;
+    
+        .contentContainer{
+            display: flex;
+            flex-direction: column ;
+            justify-content: center;
+            align-items: flex-start;
+            z-index: 4;
+            font-family: $fontas;
+            color: #FFFFFF;
+            padding: 22px;
+
+            .bigText{
+                font-size: 36px;
+                font-weight: bold;
+            }
+            .bigText::after{
+                content : "";
+                position: absolute;
+                width: 84px;
+                height: 2px;
+                top: 225px;
+                left: 22px;
+                background-color: #FFFFFF;
+            }
+            .smallText{
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            .btnDownload{
+                margin-top: 44px;
+                color: #FFFFFF;
+                text-transform: uppercase;
+                padding: 12px 21px;
+                font-size: 14px;
+                font-weight: bold;
+                background: none;
+                border: 4px solid #FFFFFF ;
+                cursor: pointer;
+                transition: 0.3s ease-in-out;
+            }
+
+        .btnDownload:hover{
+            background-color: #FFFFFF;
+            color: #000000;
+        }
+        }
+    }
+
+    
+}
