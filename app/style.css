@@ -147,18 +147,11 @@ nav {
                 align-items: flex-start;
         z-index: 4;
         color: #FFFFFF;
-        padding: 22px; }
+        padding: 22px;
+        padding-right: 50px; }
         .homepage .opacityContainer .contentContainer .contentContainerInner .bigText {
           font-size: 36px;
           font-weight: bold; }
-        .homepage .opacityContainer .contentContainer .contentContainerInner .bigText::after {
-          content: "";
-          position: absolute;
-          width: 84px;
-          height: 2px;
-          top: 225px;
-          left: 22px;
-          background-color: #FFFFFF; }
         .homepage .opacityContainer .contentContainer .contentContainerInner .smallText {
           font-size: 16px;
           font-weight: bold; }
@@ -199,7 +192,8 @@ nav {
           font-size: 20px;
           font-weight: bold;
           color: #333333;
-          padding: 15px 50px; }
+          padding: 15px 50px;
+          word-wrap: none; }
           .homepage .opacityContainer .contentContainer .formContainer .topText span {
             color: #E27866; }
         .homepage .opacityContainer .contentContainer .formContainer .inputForm {
@@ -220,3 +214,44 @@ nav {
           -webkit-align-items: center;
               -ms-flex-align: center;
                   align-items: center; }
+          .homepage .opacityContainer .contentContainer .formContainer .inputForm p {
+            -webkit-align-self: start;
+                -ms-flex-item-align: start;
+                    align-self: start;
+            font-size: 19px;
+            color: #000000;
+            font-weight: bolder;
+            padding-left: 50px; }
+          .homepage .opacityContainer .contentContainer .formContainer .inputForm input[type="text"], .homepage .opacityContainer .contentContainer .formContainer .inputForm input[type="number"] {
+            border: none;
+            border-bottom: 1px solid #D8D8D8;
+            font-family: "Montserrat", sans-serif;
+            font-size: 15px;
+            width: 72.2%;
+            padding-left: 7px;
+            padding-bottom: 4.5px;
+            padding-top: 30px; }
+          .homepage .opacityContainer .contentContainer .formContainer .inputForm .btnFormTop {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            width: 100%;
+            background-color: #41D395;
+            font-weight: 400;
+            color: #FFFFFF;
+            font-size: 20px;
+            border: none;
+            padding: 18px 100px; }
+        .homepage .opacityContainer .contentContainer .formContainer .radioForm .radioText {
+          -webkit-align-self: flex-start;
+              -ms-flex-item-align: start;
+                  align-self: flex-start; }

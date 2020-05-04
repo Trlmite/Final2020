@@ -32,23 +32,27 @@
                 z-index: 4;
                 color: #FFFFFF;
                 padding: 22px;
+                padding-right: 50px;
 
                 .bigText{
                     font-size: 36px;
                     font-weight: bold;
                 }
-                .bigText::after{
-                    content : "";
-                    position: absolute;
-                    width: 84px;
-                    height: 2px;
-                    top: 225px;
-                    left: 22px;
-                    background-color: #FFFFFF;
-                }
+
+                // ---------- place changes ----
+                // .bigText::after{
+                //     content : "";
+                //     position: absolute;
+                //     width: 84px;
+                //     height: 2px;
+                //     top: 225px;
+                //     left: 22px;
+                //     background-color: #FFFFFF;
+                // }
                 .smallText{
                     font-size: 16px;
                     font-weight: bold;
+                
                 }
 
                 .btnDownload{
@@ -83,6 +87,8 @@
                     font-weight: bold;
                     color: #333333;
                     padding: 15px 50px;
+                    word-wrap: none;
+                    
 
                     span{
                         color:#E27866 ;
@@ -94,6 +100,47 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
+                    
+                    p{
+                        align-self: start;
+                        font-size: 19px;
+                        color: #000000;
+                        font-weight: bolder;
+                        padding-left: 50px;
+
+                    }
+
+                    input[type="text"], input[type="number"]{
+                        border:none;
+                        border-bottom: 1px solid #D8D8D8;
+                        font-family: $fontas;
+                        font-size: 15px;
+                        width: 72.2%;
+                        padding-left: 7px;
+                        padding-bottom: 4.5px;
+                        padding-top: 30px;
+                    }
+
+                    .btnFormTop{
+                        display:flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        background-color: #41D395;
+                        font-weight: 400;
+                        color: #FFFFFF;
+                        font-size: 20px;
+                        border: none;
+                        padding: 18px 100px;
+                    }
+                }
+
+                .radioForm{
+                    
+                    .radioText{
+                        align-self: flex-start;
+                    }
+                    
                 }
             }
 
