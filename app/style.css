@@ -80,6 +80,11 @@ nav {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
   top: 96px;
   background-image: url(images/homepage.jpg);
@@ -104,7 +109,7 @@ nav {
     background-color: #1C1C1C;
     opacity: 0.63;
     z-index: 3;
-    padding: 70px 148px; }
+    padding: 4.375rem 9.25rem; }
     .homepage .opacityContainer .contentContainer {
       display: -webkit-box;
       display: -webkit-flex;
@@ -147,7 +152,6 @@ nav {
                 align-items: flex-start;
         z-index: 4;
         color: #FFFFFF;
-        padding: 22px;
         padding-right: 50px; }
         .homepage .opacityContainer .contentContainer .contentContainerInner .bigText {
           font-size: 36px;
@@ -255,3 +259,47 @@ nav {
           -webkit-align-self: flex-start;
               -ms-flex-item-align: start;
                   align-self: flex-start; }
+  .homepage .footerHomepage {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: abosulte;
+    background-color: #F5F5F5;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 9.25rem; }
+    .homepage .footerHomepage .footerText {
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1; }
+      .homepage .footerHomepage .footerText p {
+        color: #86878B; }
+    .homepage .footerHomepage .footerSocial {
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: space-evenly;
+      -webkit-justify-content: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly;
+      opacity: 0.65; }
+      .homepage .footerHomepage .footerSocial svg:hover {
+        cursor: pointer;
+        opacity: 1; }

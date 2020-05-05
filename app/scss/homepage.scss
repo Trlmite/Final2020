@@ -1,5 +1,6 @@
 .homepage {
     display: flex;
+    flex-direction: column;
     position: relative;
     top: 96px;
     background-image: url(images/homepage.jpg);
@@ -15,7 +16,7 @@
         background-color: #1C1C1C;
         opacity:0.63 ;
         z-index: 3;
-        padding: 70px 148px ;
+        padding: 4.375rem 9.25rem ;
     
         .contentContainer{
             display:flex;
@@ -31,7 +32,7 @@
                 align-items: flex-start;
                 z-index: 4;
                 color: #FFFFFF;
-                padding: 22px;
+
                 padding-right: 50px;
 
                 .bigText{
@@ -139,6 +140,7 @@
                     
                     .radioText{
                         align-self: flex-start;
+                        
                     }
                     
                 }
@@ -147,4 +149,34 @@
         }
     }
     
+    .footerHomepage{
+        display: flex;
+        flex-direction: row;
+        position: abosulte;
+        background-color: #F5F5F5;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 9.25rem;
+
+        .footerText{
+            flex-grow: 1;
+            // padding-right: 135px;
+            p{
+                color: #86878B;
+            }
+        }
+
+        .footerSocial{
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-evenly;
+            opacity: 0.65;
+
+            svg:hover{
+                cursor: pointer;
+                opacity: 1;
+            }
+        }
+    }
+
 }
