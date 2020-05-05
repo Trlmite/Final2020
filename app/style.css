@@ -300,6 +300,9 @@ nav {
           -ms-flex-pack: space-evenly;
               justify-content: space-evenly;
       opacity: 0.65; }
-      .homepage .footerHomepage .footerSocial svg:hover {
+      .homepage .footerHomepage .footerSocial svg:hover g {
+        cursor: pointer;
+        opacity: 1; }
+      .homepage .footerHomepage .footerSocial svg:hover path {
         cursor: pointer;
         opacity: 1; }
