@@ -18,15 +18,14 @@ nav {
   position: fixed;
   width: 100%;
   background-color: #1C1C1C;
-  margin: 0;
+  padding: 0.1rem 4.375rem;
   z-index: 10; }
   nav .logo {
     position: relative;
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
         -ms-flex-positive: 1;
-            flex-grow: 1;
-    margin: 15px 0px 0px  142px; }
+            flex-grow: 1; }
   nav ul {
     display: -webkit-box;
     display: -webkit-flex;
@@ -85,10 +84,10 @@ nav {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
-  top: 96px;
   background-image: url(images/homepage.jpg);
   background-size: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 100%;
   background-position: center;
   font-family: "Montserrat", sans-serif; }
@@ -108,7 +107,6 @@ nav {
             justify-content: space-between;
     background-color: #1C1C1C;
     opacity: 0.63;
-    z-index: 3;
     padding: 4.375rem 9.25rem; }
     .homepage .opacityContainer .contentContainer {
       display: -webkit-box;
@@ -185,19 +183,22 @@ nav {
         -webkit-flex-direction: column;
             -ms-flex-direction: column;
                 flex-direction: column;
-        width: 30vw;
+        width: 32vw;
         background-color: #FFFFFF;
         -webkit-box-flex: 1;
         -webkit-flex-grow: 1;
             -ms-flex-positive: 1;
-                flex-grow: 1; }
+                flex-grow: 1;
+        -webkit-border-radius: 10px;
+                border-radius: 10px; }
         .homepage .opacityContainer .contentContainer .formContainer .topText {
           background-color: #F5F5F5;
           font-size: 20px;
           font-weight: bold;
           color: #333333;
           padding: 15px 50px;
-          word-wrap: none; }
+          -webkit-border-radius: 10px 10px 0 0;
+                  border-radius: 10px 10px 0 0; }
           .homepage .opacityContainer .contentContainer .formContainer .topText span {
             color: #E27866; }
         .homepage .opacityContainer .contentContainer .formContainer .inputForm {
@@ -254,7 +255,9 @@ nav {
             color: #FFFFFF;
             font-size: 20px;
             border: none;
-            padding: 18px 100px; }
+            padding: 18px 100px;
+            -webkit-border-radius: 0 0 10px 10px;
+                    border-radius: 0 0 10px 10px; }
         .homepage .opacityContainer .contentContainer .formContainer .radioForm .radioText {
           -webkit-align-self: flex-start;
               -ms-flex-item-align: start;
@@ -269,7 +272,7 @@ nav {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
-    position: abosulte;
+    position: relative;
     background-color: #F5F5F5;
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
@@ -306,3 +309,84 @@ nav {
       .homepage .footerHomepage .footerSocial svg:hover path {
         cursor: pointer;
         opacity: 1; }
+
+.aboutPage {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 4.375rem 9.25rem;
+  background-color: #1C1C1C; }
+  .aboutPage .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    background-color: #1C1C1C;
+    font-family: "Montserrat", sans-serif; }
+    .aboutPage .container .logoContainer {
+      -webkit-box-flex: 2;
+      -webkit-flex-grow: 2;
+          -ms-flex-positive: 2;
+              flex-grow: 2; }
+    .aboutPage .container .textContainer {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      max-width: 32vw;
+      word-wrap: break-word;
+      color: #ffffff; }
+      .aboutPage .container .textContainer h2 {
+        font-size: 30px;
+        color: #ffffff; }
+      .aboutPage .container .textContainer .titleContainer {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .aboutPage .container .textContainer .titleContainer .logoSide {
+          padding-right: 0.625rem; }
+        .aboutPage .container .textContainer .titleContainer .textSide {
+          max-width: 28.5vw;
+          padding-left: 0.625rem; }
