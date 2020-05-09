@@ -341,7 +341,6 @@ nav {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    background-color: #1C1C1C;
     font-family: "Montserrat", sans-serif; }
     .aboutPage .container .logoContainer {
       -webkit-box-flex: 2;
@@ -390,3 +389,72 @@ nav {
         .aboutPage .container .textContainer .titleContainer .textSide {
           max-width: 28.5vw;
           padding-left: 0.625rem; }
+
+.aboutPage.Second {
+  background-color: #ffffff; }
+  .aboutPage.Second .container {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .aboutPage.Second .container .textContainer.Second {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      color: #212121; }
+      .aboutPage.Second .container .textContainer.Second p {
+        color: #86878B;
+        font-size: 14px; }
+      .aboutPage.Second .container .textContainer.Second h2 {
+        font-size: 36px;
+        color: #212121; }
+    .aboutPage.Second .container .prosContainer {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+      .aboutPage.Second .container .prosContainer .proContent {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 3.03125rem; }
+        .aboutPage.Second .container .prosContainer .proContent p {
+          color: #86878B; }

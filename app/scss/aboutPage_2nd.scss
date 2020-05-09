@@ -1,0 +1,45 @@
+.aboutPage.Second {
+    background-color: #ffffff;
+    
+    .container{
+        text-align: center;
+        flex-direction: column;
+
+        .textContainer.Second{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #212121;
+
+            p{
+                color: #86878B;
+                font-size: 14px;
+            }
+
+            h2{
+                font-size: 36px;
+                color: #212121;
+            }
+        }
+
+        .prosContainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            
+
+            .proContent{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 3.03125rem;
+                
+                p{
+                   color: #86878B;
+                }
+            }
+        }
+    }
+}
