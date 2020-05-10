@@ -10,6 +10,7 @@
     // min-height: 100vh;
     background-position: center;
     font-family: $fontas;
+    justify-content: space-evenly;
 
     // .homepage::before{
     //     content: "";
@@ -25,7 +26,7 @@
         justify-content: space-between;
         background-color: #1C1C1C;
         opacity:0.63 ;
-        padding: 4.375rem 9.25rem ;
+        // padding: 4.375rem 9.25rem ;
     
         .contentContainer{
             display:flex;
@@ -125,7 +126,7 @@
                         border-bottom: 1px solid #D8D8D8;
                         font-family: $fontas;
                         font-size: 15px;
-                        width: 72.2%;
+                        width: 100%;
                         padding-left: 7px;
                         padding-bottom: 4.5px;
                         padding-top: 30px;

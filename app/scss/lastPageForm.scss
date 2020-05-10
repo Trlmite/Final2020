@@ -1,0 +1,64 @@
+.lastForm{
+    width: 100%;
+    display: flex;
+    background-color: #E27866;
+    justify-content: center;
+    align-items: center;
+
+    .container.last{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+
+        .textContainer.lastPage{
+            justify-content: center;
+            align-items: center;
+        }
+
+        .formContainer{
+            display: flex;
+            flex-direction: column;
+            padding: 2.0rem 4rem ;
+            background-color: #FFFFFF;
+            flex-grow: 1;
+            border-radius: 10px;
+
+            .inputForm{
+                display: flex;
+                flex-direction: column;
+                background-color: #FFFFFF;
+
+
+                input[type="text"], input[type="number"]{
+                    border:none;
+                    border-bottom: 1px solid #D8D8D8;
+                    font-family: $fontas;
+                    font-size: 15px;
+                    width: 100%;
+                    padding-left: 7px;
+                    padding-bottom: 4.5px;
+                    padding-top: 30px;
+                }
+            }
+
+            .radioForm{
+                font-size: 9px;
+                font-weight: bold;
+                color:#000000 ;
+                padding-top: 1.625rem;
+                padding-bottom: 2.563rem;
+            }
+
+            button{
+                color: #FFFFFF;
+                background-color:#41D395 ;
+                border: none;
+                border-radius: 10px;
+                padding: 1rem 3.625rem;
+            }
+        }
+    }    
+
+}

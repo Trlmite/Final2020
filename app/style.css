@@ -18,14 +18,14 @@ nav {
   position: fixed;
   width: 100%;
   background-color: #1C1C1C;
-  padding: 0.1rem 4.375rem;
   z-index: 10; }
   nav .logo {
     position: relative;
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
         -ms-flex-positive: 1;
-            flex-grow: 1; }
+            flex-grow: 1;
+    margin: 15px 0px 0px  142px; }
   nav ul {
     display: -webkit-box;
     display: -webkit-flex;
@@ -90,7 +90,11 @@ nav {
      object-fit: contain;
   width: 100%;
   background-position: center;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
   .homepage .opacityContainer {
     display: -webkit-box;
     display: -webkit-flex;
@@ -106,8 +110,7 @@ nav {
         -ms-flex-pack: justify;
             justify-content: space-between;
     background-color: #1C1C1C;
-    opacity: 0.63;
-    padding: 4.375rem 9.25rem; }
+    opacity: 0.63; }
     .homepage .opacityContainer .contentContainer {
       display: -webkit-box;
       display: -webkit-flex;
@@ -232,7 +235,7 @@ nav {
             border-bottom: 1px solid #D8D8D8;
             font-family: "Montserrat", sans-serif;
             font-size: 15px;
-            width: 72.2%;
+            width: 100%;
             padding-left: 7px;
             padding-bottom: 4.5px;
             padding-top: 30px; }
@@ -320,8 +323,11 @@ nav {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 4.375rem 9.25rem;
-  background-color: #1C1C1C; }
+  background-color: #1C1C1C;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
   .aboutPage .container {
     display: -webkit-box;
     display: -webkit-flex;
@@ -581,3 +587,98 @@ nav {
         .aboutPage.pricing .pricingContainer .pricingList .whitePricing .pricing.Explained {
           font-size: 14px;
           text-align: center; }
+
+.lastForm {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #E27866;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .lastForm .container.last {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #FFFFFF; }
+    .lastForm .container.last .textContainer.lastPage {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .lastForm .container.last .formContainer {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding: 2.0rem 4rem;
+      background-color: #FFFFFF;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      -webkit-border-radius: 10px;
+              border-radius: 10px; }
+      .lastForm .container.last .formContainer .inputForm {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        background-color: #FFFFFF; }
+        .lastForm .container.last .formContainer .inputForm input[type="text"], .lastForm .container.last .formContainer .inputForm input[type="number"] {
+          border: none;
+          border-bottom: 1px solid #D8D8D8;
+          font-family: "Montserrat", sans-serif;
+          font-size: 15px;
+          width: 100%;
+          padding-left: 7px;
+          padding-bottom: 4.5px;
+          padding-top: 30px; }
+      .lastForm .container.last .formContainer .radioForm {
+        font-size: 9px;
+        font-weight: bold;
+        color: #000000;
+        padding-top: 1.625rem;
+        padding-bottom: 2.563rem; }
+      .lastForm .container.last .formContainer button {
+        color: #FFFFFF;
+        background-color: #41D395;
+        border: none;
+        -webkit-border-radius: 10px;
+                border-radius: 10px;
+        padding: 1rem 3.625rem; }
