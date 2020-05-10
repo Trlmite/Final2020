@@ -455,6 +455,129 @@ nav {
         -webkit-align-items: center;
             -ms-flex-align: center;
                 align-items: center;
-        padding: 3.03125rem; }
+        padding: 3.03125rem;
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1; }
         .aboutPage.Second .container .prosContainer .proContent p {
           color: #86878B; }
+
+.aboutPage.pricing {
+  background-color: #6696E2; }
+  .aboutPage.pricing .container.pricing {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .aboutPage.pricing .textContainer.pricing {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .aboutPage.pricing .pricingContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding: 3.03125rem; }
+    .aboutPage.pricing .pricingContainer .pricingList {
+      padding: 1.25rem;
+      -webkit-border-radius: 10px 10px 10px 10px;
+              border-radius: 10px 10px 10px 10px;
+      padding-top: 7.375rem; }
+      .aboutPage.pricing .pricingContainer .pricingList .darkPricing {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        background-color: #333333;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        color: #FFFFFF;
+        -webkit-border-radius: 10px 10px 0 0;
+                border-radius: 10px 10px 0 0;
+        padding-left: 3.688rem;
+        padding-right: 3.688rem; }
+        .aboutPage.pricing .pricingContainer .pricingList .darkPricing .pricing {
+          margin: 0 auto; }
+        .aboutPage.pricing .pricingContainer .pricingList .darkPricing .pricing.class {
+          padding-top: 0.875rem;
+          font-size: 20px; }
+        .aboutPage.pricing .pricingContainer .pricingList .darkPricing .pricing.price {
+          font-size: 94px; }
+          .aboutPage.pricing .pricingContainer .pricingList .darkPricing .pricing.price span {
+            font-size: 34px; }
+        .aboutPage.pricing .pricingContainer .pricingList .darkPricing .pricing.payment {
+          font-size: 14px;
+          opacity: 50%;
+          padding-bottom: 1.125rem; }
+      .aboutPage.pricing .pricingContainer .pricingList .greenPricing {
+        width: 100%;
+        height: 6px;
+        background-color: #41D395; }
+      .aboutPage.pricing .pricingContainer .pricingList .whitePricing {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        color: #86878B;
+        background-color: #FFFFFF;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding-left: 3.688rem;
+        padding-right: 3.688rem;
+        -webkit-border-radius: 0 0 10px 10px;
+                border-radius: 0 0 10px 10px;
+        white-space: nowrap; }
+        .aboutPage.pricing .pricingContainer .pricingList .whitePricing .pricing.Explained {
+          font-size: 14px;
+          text-align: center; }
