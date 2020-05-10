@@ -465,6 +465,80 @@ nav {
         .aboutPage.Second .container .prosContainer .proContent p {
           color: #86878B; }
 
+.aboutPage.reviews {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ffffff;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .aboutPage.reviews .textContainer.reviews {
+    padding: 3.125rem 0; }
+  .aboutPage.reviews .swiper-container {
+    width: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 3.125rem 0; }
+    .aboutPage.reviews .swiper-container .swiper-slide {
+      text-align: center;
+      background: #fff; }
+      .aboutPage.reviews .swiper-container .swiper-slide .review {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -webkit-flex-direction: column-reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 0.625rem; }
+        .aboutPage.reviews .swiper-container .swiper-slide .review .foto {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex; }
+          .aboutPage.reviews .swiper-container .swiper-slide .review .foto .name p {
+            color: #000000;
+            font-size: 20px; }
+            .aboutPage.reviews .swiper-container .swiper-slide .review .foto .name p span {
+              font-size: 14px;
+              color: #86878B; }
+        .aboutPage.reviews .swiper-container .swiper-slide .review .chatbox {
+          background-color: #6696E2;
+          padding: 1.25rem;
+          max-width: 15rem; }
+  .aboutPage.reviews .swiper-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: none;
+    border: 1px solid #E27866;
+    opacity: 1; }
+  .aboutPage.reviews .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #E27866; }
+
 .aboutPage.pricing {
   background-color: #6696E2; }
   .aboutPage.pricing .container.pricing {

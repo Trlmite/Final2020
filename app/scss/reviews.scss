@@ -1,0 +1,66 @@
+.aboutPage.reviews{
+    flex-direction: column;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    
+    .textContainer.reviews{
+        padding: 3.125rem 0;
+        p{}
+    }
+    .swiper-container{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 3.125rem 0;
+
+        .swiper-slide{
+            text-align: center;
+            background: #fff;
+
+            .review{
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+                padding: 0.625rem;
+        
+                .foto{
+                    display: flex;
+                    
+                    .name{
+                        p{
+                            color: #000000;
+                            font-size: 20px;
+        
+                            span{
+                                font-size: 14px;
+                                color: #86878B;
+                            }
+                        } 
+                    }
+                }
+                .chatbox{
+                    background-color:#6696E2 ;
+                    padding:1.25rem;
+                    max-width: 15rem;
+                }
+            }
+        }
+    }
+
+    .swiper-pagination .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background: none;
+        border: 1px solid #E27866;
+        opacity: 1;
+    }
+    
+    .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background: #E27866;
+    }
+    
+    
+}
+
