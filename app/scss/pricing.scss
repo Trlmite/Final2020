@@ -5,6 +5,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 3.125rem 0;
     }
 
         .textContainer.pricing{
@@ -17,7 +18,6 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-end;
-            padding: 3.03125rem;
 
             .pricingList{
                 padding: 1.25rem;

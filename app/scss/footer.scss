@@ -1,0 +1,33 @@
+.footerHomepage.footer{
+    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    background-color: #1C1C1C;
+
+    .footerText{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 8.5rem;
+        color: #FFFFFF;
+        opacity: 0.5;
+    }
+
+    .footerSocial{
+
+        svg{
+        padding:1.625rem 3.75rem;
+        }
+
+        svg:hover g{
+            cursor: pointer;
+            opacity: 1;
+
+        }
+        svg:hover path{
+            cursor: pointer;
+            opacity: 1;
+        }
+    }
+}

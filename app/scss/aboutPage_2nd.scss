@@ -4,6 +4,7 @@
     .container{
         text-align: center;
         flex-direction: column;
+        padding: 3.125rem 0;
 
         .textContainer.Second{
             display: flex;
@@ -36,6 +37,7 @@
                 align-items: center;
                 padding: 3.03125rem;
                 flex-grow: 1;
+                max-width: 27.5rem;
                 
                 p{
                    color: #86878B;

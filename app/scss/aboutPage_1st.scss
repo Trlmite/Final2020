@@ -1,24 +1,22 @@
 .aboutPage {
     display: flex;
     flex-direction: row;
-    // padding: 4.375rem 9.25rem ;
     background-color: #1C1C1C;
-    justify-content: space-between;
+    justify-content: center;
     
 
 
     .container{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         width: 100%;
         font-family: $fontas;
+        padding: 9.375rem;
         
 
         .logoContainer{
-        flex-grow: 2;
-        // padding-right: 5.25rem;
 
         }
 
@@ -27,11 +25,10 @@
             flex-direction: column;
             justify-content: center;
             align-self: center;
-            // width: 100%;
-            max-width: 32vw;
+            max-width: 28.125rem;
             word-wrap: break-word;
             color: #ffffff;
-            // padding-left: 5.25rem;
+           
             
                 h2{
                     font-size: 30px;
