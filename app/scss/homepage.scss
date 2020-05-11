@@ -24,8 +24,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        background-color: #1C1C1C;
-        opacity:0.63 ;
+        background-color: rgba(28, 28, 28,0.63);
         height: 100%;
         padding: 9.375rem;
         
@@ -37,6 +36,7 @@
             align-items: center;
             flex-grow: 1;
             padding: 4.688rem 0;
+            z-index: 999;
         
             .contentContainerInner{
                 display: flex;
@@ -49,7 +49,7 @@
 
                 .bigText{
                     font-size: 36px;
-                    font-weight: bold;
+                    font-weight: 500;
                 }
 
                 // ---------- place changes ----
@@ -90,7 +90,7 @@
             .formContainer{
                 display: flex;
                 flex-direction: column;
-                max-width: 22.5rem;
+                max-width: 25.5rem;
                 background-color: #FFFFFF;
                 border-radius: 10px;
                 
@@ -128,11 +128,11 @@
                         border:none;
                         border-bottom: 1px solid #D8D8D8;
                         font-family: $fontas;
-                        font-size: 15px;
+                        font-size: 20px;
                         width: 72.5%;
                         padding-left: 7px;
                         padding-bottom: 4.5px;
-                        padding-top: 30px;
+                        padding-top: 15px;
                     }
 
                     .btnFormTop{
@@ -152,8 +152,13 @@
 
                 .radioForm{
                     
+                    input[type="radio"]{
+                        border: 1px solid #41D395;
+                    }
+
                     .radioText{
                         align-self: flex-start;
+                        padding-left: 0;
                         
                     }
                     
@@ -174,6 +179,7 @@
 
         .footerText{
             flex-grow: 1;
+            max-width: 30rem;
             // padding-right: 135px;
             p{
                 color: #86878B;

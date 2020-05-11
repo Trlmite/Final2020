@@ -18,7 +18,7 @@ nav {
   position: fixed;
   width: 100%;
   background-color: #1C1C1C;
-  z-index: 10; }
+  z-index: 1000; }
   nav .logo {
     position: relative;
     -webkit-box-flex: 1;
@@ -109,8 +109,7 @@ nav {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background-color: #1C1C1C;
-    opacity: 0.63;
+    background-color: rgba(28, 28, 28, 0.63);
     height: 100%;
     padding: 9.375rem; }
     .homepage .opacityContainer .contentContainer {
@@ -135,7 +134,8 @@ nav {
       -webkit-flex-grow: 1;
           -ms-flex-positive: 1;
               flex-grow: 1;
-      padding: 4.688rem 0; }
+      padding: 4.688rem 0;
+      z-index: 999; }
       .homepage .opacityContainer .contentContainer .contentContainerInner {
         display: -webkit-box;
         display: -webkit-flex;
@@ -159,7 +159,7 @@ nav {
         padding-right: 6.25rem; }
         .homepage .opacityContainer .contentContainer .contentContainerInner .bigText {
           font-size: 36px;
-          font-weight: bold; }
+          font-weight: 500; }
         .homepage .opacityContainer .contentContainer .contentContainerInner .smallText {
           font-size: 16px;
           font-weight: bold; }
@@ -189,7 +189,7 @@ nav {
         -webkit-flex-direction: column;
             -ms-flex-direction: column;
                 flex-direction: column;
-        max-width: 22.5rem;
+        max-width: 25.5rem;
         background-color: #FFFFFF;
         -webkit-border-radius: 10px;
                 border-radius: 10px; }
@@ -233,11 +233,11 @@ nav {
             border: none;
             border-bottom: 1px solid #D8D8D8;
             font-family: "Montserrat", sans-serif;
-            font-size: 15px;
+            font-size: 20px;
             width: 72.5%;
             padding-left: 7px;
             padding-bottom: 4.5px;
-            padding-top: 30px; }
+            padding-top: 15px; }
           .homepage .opacityContainer .contentContainer .formContainer .inputForm .btnFormTop {
             display: -webkit-box;
             display: -webkit-flex;
@@ -260,10 +260,13 @@ nav {
             padding: 18px 100px;
             -webkit-border-radius: 0 0 10px 10px;
                     border-radius: 0 0 10px 10px; }
+        .homepage .opacityContainer .contentContainer .formContainer .radioForm input[type="radio"] {
+          border: 1px solid #41D395; }
         .homepage .opacityContainer .contentContainer .formContainer .radioForm .radioText {
           -webkit-align-self: flex-start;
               -ms-flex-item-align: start;
-                  align-self: flex-start; }
+                  align-self: flex-start;
+          padding-left: 0; }
   .homepage .footerHomepage {
     display: -webkit-box;
     display: -webkit-flex;
@@ -288,7 +291,8 @@ nav {
       -webkit-box-flex: 1;
       -webkit-flex-grow: 1;
           -ms-flex-positive: 1;
-              flex-grow: 1; }
+              flex-grow: 1;
+      max-width: 30rem; }
       .homepage .footerHomepage .footerText p {
         color: #86878B; }
     .homepage .footerHomepage .footerSocial {
@@ -385,7 +389,24 @@ nav {
             -ms-flex-align: center;
                 align-items: center; }
         .aboutPage .container .textContainer .titleContainer .logoSide {
+          width: 50px;
+          height: 50px;
+          background-color: #E27866;
+          -webkit-border-radius: 50%;
+                  border-radius: 50%;
+          position: relative;
+          -webkit-box-flex: 1;
+          -webkit-flex-grow: 1;
+              -ms-flex-positive: 1;
+                  flex-grow: 1;
           padding-right: 0.625rem; }
+          .aboutPage .container .textContainer .titleContainer .logoSide svg {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto; }
         .aboutPage .container .textContainer .titleContainer .textSide {
           max-width: 28.5vw;
           padding-left: 0.625rem; }
@@ -437,7 +458,10 @@ nav {
       -webkit-box-direction: normal;
       -webkit-flex-direction: row;
           -ms-flex-direction: row;
-              flex-direction: row; }
+              flex-direction: row;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
       .aboutPage.Second .container .prosContainer .proContent {
         display: -webkit-box;
         display: -webkit-flex;
@@ -558,15 +582,16 @@ nav {
           max-width: 15rem;
           -webkit-border-radius: 15px;
                   border-radius: 15px;
-          margin-bottom: 0.625rem; }
+          margin-bottom: 0.625rem;
+          position: relative; }
           .aboutPage.reviews .swiper-container .swiper-slide .review .chatbox p {
             color: #ffffff;
             font-size: 16px; }
         .aboutPage.reviews .swiper-container .swiper-slide .review .chatbox::before {
           content: "";
-          position: absolute;
-          bottom: 6.25rem;
-          left: 13.125rem;
+          position: relative;
+          bottom: 100px;
+          left: 200px;
           background: #11c070;
           -webkit-transform: rotate(45deg);
               -ms-transform: rotate(45deg);
@@ -578,7 +603,8 @@ nav {
     height: 10px;
     background: none;
     border: 1px solid #E27866;
-    opacity: 1; }
+    opacity: 1;
+    margin: 10px; }
   .aboutPage.reviews .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background: #E27866; }
 
