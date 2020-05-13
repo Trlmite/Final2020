@@ -39,6 +39,9 @@
                 text-transform: uppercase;
                 transform: rotate(-45deg);
                 color: #fff;
+                font-size: 14px;
+                font-weight: bolder;
+                font-family: $fontas;
                 opacity: 0.5;
             }
             &.active {

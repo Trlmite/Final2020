@@ -24,12 +24,19 @@ nav {
 
         li{
             flex-grow: 1;
-            color: #FFFFFF;
-            font-family: $fontas;
-            font-size: 14px;
             opacity: 0.69;
-            text-transform:  capitalize;
             margin: 25px 22.5px 25px 22.5px;
+
+            a{
+                text-decoration: none;
+                font-family: $fontas;
+                font-size: 14px;
+                color: #FFFFFF;
+                font-family: $fontas;
+                font-size: 14px;
+                opacity: 0.69;
+                text-transform:  capitalize;
+            }
         }
 
         li::after{

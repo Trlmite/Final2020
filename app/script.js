@@ -1,5 +1,5 @@
 "use strict"
-
+//swiper galerry///
 console.log("shits works");
 
 
@@ -48,3 +48,11 @@ for (let i = 0; i < navBlocks.length; i++) {
         
     });
 }
+
+
+// ////scroll inTo view/////
+
+// let element = document.getElementById('FeatureNew');
+// let featureSection = document.getElementById('features-section');
+
+// elemenent.addEventListener("click", scrollInToView());
