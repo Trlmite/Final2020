@@ -87,7 +87,7 @@ nav {
     }
 
     .mobile_nav{
-        visibility: hidden;
+        display: none;
         position: relative;
         right: 130px;
         top: 75px;
@@ -98,7 +98,7 @@ nav {
         background-color: rgba(28, 28, 28,1);
 
         &.active{
-            visibility: visible;
+            display: block;
         }
 
         ul{
