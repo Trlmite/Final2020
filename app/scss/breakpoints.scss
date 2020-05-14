@@ -1,0 +1,135 @@
+@media (max-width: 720px){
+
+    .homepage{
+        .opacityContainer{
+            padding: 0;
+            .contentContainer{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 6rem 2rem;
+                padding-top: 8rem;
+
+                .contentContainerInner{
+                    display: flex;
+                    justify-content: center;
+                    align-self: center;
+                    padding: 0;
+                    max-width: 400px;
+                }
+
+               .formContainer{
+                display: none;
+               }
+            }
+        }
+        .footerHomepage{
+            display: none;
+        }
+    }
+    .features{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0;
+        
+        .slides-navigation{
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            
+            .nav-block{
+                margin: 10px;
+            }
+        }
+
+        .features-slides{
+            margin: 0;
+
+            .feature-block{
+                .featuresContainerOuter{
+                    .featuresContainerIMG{
+                        display: none;
+                        .smallImageContainer{
+                            img{
+                                display: none;
+                            }
+                        }
+                        .bigImageContainer{
+                            display: none;
+                            img{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .aboutPage{
+        display: flex;
+        flex-direction: column;
+
+        .container{
+            flex-direction: column;
+            padding: 2rem 0;
+
+            .textContainer{
+                padding: 0 1rem;
+                .titleContainer{
+                    justify-content: center;
+                    align-items: center;
+                    .logoSide{
+                        flex-grow: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .aboutPage.pricing{
+        .container.pricing{
+            .pricingContainer{
+                flex-direction: column;
+            }
+        }
+    }
+
+    .aboutPage.lastForm{
+        .container.last{
+            .formContainer{
+                width: 100%;
+                padding-bottom: 0;
+                border-radius: 15px;
+
+                .inputForm{
+                    align-items: center;
+                    justify-content: center;
+                    padding: 25px;
+
+                    .radioForm{
+                        label{
+                            margin: 0 50px;
+                            font-size: 20px;
+
+                            
+                        }
+                    }
+                    button{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        .footerSocial{
+            svg{
+                display: none;
+            }
+        }
+    }
+
+}

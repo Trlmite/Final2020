@@ -8,7 +8,25 @@ var mySwiper = new Swiper ('.swiper-container', {
     loop: true,
     slidesPerView: 3,
     slidesPerGroup: 3,
-    spaceBetween: 119,
+    spaceBetween: 50,
+
+    breakpoints:{
+        1060:{
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            spaceBetween:50,
+        },
+        720:{
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+            spaceBetween:50,
+        },
+        400:{
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            spaceBetween:10,
+        },
+    },
 
     pagination: {
       el: '.swiper-pagination',
