@@ -13,7 +13,13 @@
 
         .burger{
             display: flex;
-            padding: 5px;
+            padding: 25px 50px;
+            right: 25px;
+
+            .top_burger, .middle_burger, .bottom_burger{
+                right: 20px;
+            }
+
         }
     }
 
@@ -34,6 +40,10 @@
                     align-self: center;
                     padding: 0;
                     max-width: 400px;
+
+                    svg{
+                        justify-content: center;
+                    }
                 }
 
                .formContainer{
@@ -49,6 +59,7 @@
         display: flex;
         flex-direction: column;
         padding: 2rem 0;
+        min-height: 70vh;
         
         .slides-navigation{
             flex-direction: row;
@@ -140,10 +151,15 @@
                     justify-content: center;
                     padding: 25px;
 
+
+                    input[type="text"], input[type="number"]{
+                        width: 50%;
+                    }
+
                     .radioForm{
                         label{
-                            margin: 0 50px;
-                            font-size: 20px;
+                            margin: 0 20px;
+                            font-size: 15px;
 
                             
                         }

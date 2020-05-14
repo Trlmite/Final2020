@@ -24,7 +24,7 @@ var mySwiper = new Swiper ('.swiper-container', {
         400:{
             slidesPerView: 1,
             slidesPerGroup: 1,
-            spaceBetween:10,
+            spaceBetween:0,
         },
     },
 
@@ -68,9 +68,23 @@ for (let i = 0; i < navBlocks.length; i++) {
 }
 
 
-// ////scroll inTo view/////
+// burger ////
 
-// let element = document.getElementById('FeatureNew');
-// let featureSection = document.getElementById('features-section');
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('.mobile_nav');
 
-// elemenent.addEventListener("click", scrollInToView());
+
+burger.addEventListener('click', function(){
+
+    console.log("hello");
+
+    if (nav.classList.value != "mobile_nav active"){
+        nav.classList.add('active');
+        burger.style.right = "-355px";
+    }
+    else{
+        nav.classList.remove('active');
+        burger.style.right = "20px";
+    };
+
+});
