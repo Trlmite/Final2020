@@ -1,5 +1,22 @@
 @media (max-width: 720px){
 
+    nav{
+        height: 75px;
+        .logo{
+            svg{
+                display: none;
+            }
+        }
+        ul{
+            display: none;
+        }
+
+        .burger{
+            display: flex;
+            padding: 5px;
+        }
+    }
+
     .homepage{
         .opacityContainer{
             padding: 0;
@@ -93,6 +110,15 @@
             .pricingContainer{
                 flex-direction: column;
             }
+        }
+    }
+
+    .aboutPage.reviews{
+        .textContainer.reviews{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 3.125rem;
         }
     }
 

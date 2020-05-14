@@ -38,6 +38,8 @@ nav {
                 text-transform:  capitalize;
             }
         }
+        
+        
 
         li::after{
             content: "";
@@ -59,4 +61,30 @@ nav {
                 opacity: 1;
         }
     }
+
+    .burger{
+        position:relative;
+        right: 100px;
+        cursor:pointer;
+        display: none;
+       
+        .top_burger, .middle_burger, .bottom_burger{
+            position: absolute;
+            top:30px;
+            width: 70px;
+            height: 5px;
+            background:white;
+        }
+    
+        .top_burger{
+            top:30px;
+       }
+       .middle_burger{
+         top:40px;
+       }
+       .bottom_burger{
+         top:50px; 
+       }
+    }
+
 }
