@@ -68,9 +68,15 @@
                     .featuresContainerIMG{
                         display: none;
                         .smallImageContainer{
-                            img{
+                            display: none;
+                            .smallImage{
+                               display: none;
+                               
+                               img{
                                 display: none;
-                            }
+                                }
+                           }
+                            
                         }
                         .bigImageContainer{
                             display: none;
@@ -156,6 +162,14 @@
                 display: none;
             }
         }
+    }
+
+    .features .feature-slides .feature-block .featuresContainerOuter .featuresContainerIMG .smallImageContainer .smallImage img{
+        display: none;
+    }
+
+    .features .feature-slides .feature-block .featuresContainerOuter .featuresContainerIMG .bigImageContainer {
+        display: none;
     }
 
 }

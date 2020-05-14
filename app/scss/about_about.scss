@@ -62,14 +62,12 @@
                 display: none;
                 align-items: center;
                 justify-content: center;
-                // animation: fade-in 0.35s linear;
+                
             
                 &.active {
                     display: flex;
                 }
-                // &:nth-child(even) {
-                //     background: pink;
-                // }
+                
 
                 .featuresContainerOuter{
                     display: flex;
@@ -115,7 +113,6 @@
                             
 
                             .smallImage{
-                                
 
                                 img{
                                 padding: 14px;
