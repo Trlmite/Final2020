@@ -90,6 +90,41 @@ burger.addEventListener('click', function(){
         nav.classList.remove('active');
     };
 
-    
+
 
 });
+
+
+
+//form validation///
+
+let vardas = document.getElementById("name");
+let pavarde =document.getElementById("surname");
+let numeris = document.getElementById('phone');
+let button = document.querySelector('.btnFormTop');
+
+button.addEventListener('click', function(){
+
+    console.log('haaaaa');
+
+    if(vardas.value == "" || pavarde.value == "" || numeris.value ==""){
+        alert("Fill the form");
+    };
+});
+
+let vardas1 = document.getElementById("name1");
+let pavarde1 =document.getElementById("surname1");
+let numeris1 = document.getElementById('phone1');
+let button2 = document.getElementById('buttonBottom');
+
+button2.addEventListener('click', function(){
+
+    console.log('button222a');
+
+    if(vardas1.value == "" || pavarde1.value == "" || numeris1.value ==""){
+        alert("Fill the form");
+    };
+});
+
+
+
