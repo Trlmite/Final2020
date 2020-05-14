@@ -74,17 +74,20 @@ const burger = document.querySelector('.burger');
 const nav = document.querySelector('.mobile_nav');
 
 
+let mobileNavStatus = false;
+
+
+
+
 burger.addEventListener('click', function(){
 
     console.log("hello");
 
     if (nav.classList.value != "mobile_nav active"){
         nav.classList.add('active');
-        burger.style.right = "-355px";
     }
     else{
         nav.classList.remove('active');
-        burger.style.right = "20px";
     };
 
 });

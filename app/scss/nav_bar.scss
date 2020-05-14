@@ -64,7 +64,6 @@ nav {
 
     .burger{
         position:relative;
-        right: 50px;
         cursor:pointer;
         display: none;
        
@@ -88,7 +87,7 @@ nav {
     }
 
     .mobile_nav{
-        display: none;
+        visibility: hidden;
         position: relative;
         right: 130px;
         top: 75px;
@@ -99,7 +98,7 @@ nav {
         background-color: rgba(28, 28, 28,1);
 
         &.active{
-            display: block;
+            visibility: visible;
         }
 
         ul{
