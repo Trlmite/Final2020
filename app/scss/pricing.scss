@@ -11,6 +11,16 @@
         .textContainer.pricing{
             justify-content: center;
             align-items: center;
+
+            h2::after{
+                content: "";
+                position: absolute;
+                width: 64px;
+                height: 2px;
+                top: 55px;
+                left: 100px;
+                background-color: #41D395;
+            }
         }
 
         .pricingContainer{

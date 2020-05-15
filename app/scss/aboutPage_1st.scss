@@ -31,8 +31,19 @@
            
             
                 h2{
+                    position: relative;
                     font-size: 30px;
                     color: #ffffff;
+                }
+
+                h2::after{
+                    content: "";
+                    position: absolute;
+                    width: 200px;
+                    height: 2px;
+                    top: 94px;
+                    left: 2px;
+                    background-color: $brandColor;
                 }
         
             .titleContainer{
@@ -63,14 +74,7 @@
                     padding-left: 0.625rem;
                 }
             }
-        // .eye::before{
-        //     content: "";
-        //     position: relative;
-        //     width:3.125rem ;
-        //     height: 3.125rem;
-        //     border-radius: 50%;
-        //     background-color: $brandColor ;
-        // }
+       
         }
     }
 }

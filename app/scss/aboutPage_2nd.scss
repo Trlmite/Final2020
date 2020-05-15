@@ -18,8 +18,19 @@
             }
 
             h2{
+                position: relative;
                 font-size: 36px;
                 color: #212121;
+            }
+
+            h2::after{
+                content: "";
+                position: absolute;
+                width: 64px;
+                height: 2px;
+                top: 70px;
+                left: 190px;
+                background-color: $brandColor;
             }
         }
 

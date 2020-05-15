@@ -49,18 +49,18 @@
                 .bigText{
                     font-size: 36px;
                     font-weight: 500;
+                    position: relative;
                 }
 
-                // ---------- place changes ----
-                // .bigText::after{
-                //     content : "";
-                //     position: absolute;
-                //     width: 84px;
-                //     height: 2px;
-                //     top: 225px;
-                //     left: 22px;
-                //     background-color: #FFFFFF;
-                // }
+                .bigText::after{
+                    content : "";
+                    position: absolute;
+                    width: 84px;
+                    height: 2px;
+                    top: 105px;
+                    left: 2px;
+                    background-color: #FFFFFF;
+                }
                 .smallText{
                     font-size: 16px;
                     font-weight: bold;
