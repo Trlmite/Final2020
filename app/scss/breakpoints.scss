@@ -52,6 +52,10 @@
                     svg{
                         justify-content: center;
                     }
+
+                    p::after{
+                        display: none;
+                    }
                 }
 
                .formContainer{
@@ -130,6 +134,16 @@
         }
     }
 
+    .aboutPage.Second{
+        .container{
+            .textContainer.Second{
+                h2::after{
+                    display: none;
+                }
+            }
+        }
+    }
+
     .aboutPage.pricing{
         .container.pricing{
             .pricingContainer{
@@ -144,6 +158,10 @@
             justify-content: center;
             align-items: center;
             padding: 3.125rem;
+
+            p::after{
+                display: none;
+            }
         }
     }
 

@@ -72,9 +72,7 @@ for (let i = 0; i < navBlocks.length; i++) {
 
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.mobile_nav');
-
-
-let mobileNavStatus = false;
+let mobileNavItem = document.querySelectorAll(".mobile_nav a");
 
 
 
@@ -82,16 +80,16 @@ let mobileNavStatus = false;
 burger.addEventListener('click', function(){
 
     console.log("hello");
+    
 
     if (nav.classList.value != "mobile_nav active"){
         nav.classList.add('active');
+
+        
     }
     else{
         nav.classList.remove('active');
     };
-
-
-
 });
 
 
@@ -125,6 +123,3 @@ button2.addEventListener('click', function(){
         alert("Fill the form");
     };
 });
-
-
-
