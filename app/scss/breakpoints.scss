@@ -127,7 +127,11 @@
                     justify-content: center;
                     align-items: center;
                     .logoSide{
+                        padding: 0;
                         flex-grow: 0;
+                    }
+                    .textSide{
+                        max-width: 50vw;
                     }
                 }
             }

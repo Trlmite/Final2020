@@ -74,7 +74,14 @@ const burger = document.querySelector('.burger');
 const nav = document.querySelector('.mobile_nav');
 let mobileNavItem = document.querySelectorAll(".mobile_nav a");
 
+function addOnclick(x){
+    for (let i = 0; i < x.length; i++) {
+        x[i].setAttribute("onclick", "nav.classList.remove('active')");
 
+}
+};
+
+addOnclick(mobileNavItem);
 
 
 burger.addEventListener('click', function(){
@@ -84,11 +91,13 @@ burger.addEventListener('click', function(){
 
     if (nav.classList.value != "mobile_nav active"){
         nav.classList.add('active');
+        
 
         
     }
     else{
         nav.classList.remove('active');
+        
     };
 });
 

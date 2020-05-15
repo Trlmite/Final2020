@@ -89,16 +89,18 @@ nav {
     .mobile_nav{
         display: none;
         position: relative;
-        right: 130px;
         top: 75px;
+    
         justify-content: center;
         align-items: center;
-        width: 150%;
+        width: 100%;
         height: 100vh;
         background-color: rgba(28, 28, 28,1);
 
         &.active{
-            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         ul{
@@ -109,21 +111,22 @@ nav {
             list-style-type: none ;
             margin: 0 auto;
             margin-block-start: 0;
+            width: 100%;
             
     
             li{
                 opacity: 0.69;
-                margin: 25px 22.5px 25px 22.5px;
+                margin: 30px;
+                
     
                 a{
                     text-decoration: none;
-                    font-family: $fontas;
-                    font-size: 14px;
                     color: #FFFFFF;
                     font-family: $fontas;
-                    font-size: 14px;
+                    font-size: 20px;
                     opacity: 0.69;
                     text-transform:  capitalize;
+                    width: 100%;
                 }
             }
             
